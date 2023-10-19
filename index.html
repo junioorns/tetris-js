@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/657de39a82.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <canvas id="tetris" width="240" height="400"></canvas>
+    <div class="game-data">
+        <div id="score">Score: 0</div>
+        <div class="buttons">
+            <button id="startButton">Start Game</button>
+            <button id="pauseButton">Pause</button>
+            <button id="stopButton">Stop</button>
+        </div>
+        <select name="level" id="level">
+            <option value="easy">Easy</option>
+            <option value="normal">Normal</option>
+            <option value="hard">Hard</option>
+        </select>
+        <div class="help">
+            <div class="tetris-move">
+                <h1>Controls: </h1>
+                    <i class="fa-solid fa-arrow-left-long left"></i>
+                    <i class="fa-solid fa-arrow-right-long right"></i>
+                    <i class="fa-solid fa-arrow-down-long down"></i>
+            </div>
+            <div class="rotate">
+                <h1>Rotate :</h1>
+                <p>click Q : <i class="fa-solid fa-arrow-rotate-left"></i></p>
+                <p>click W : <i class="fa-solid fa-arrow-rotate-right"></i></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
